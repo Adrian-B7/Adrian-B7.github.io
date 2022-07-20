@@ -1,0 +1,133 @@
+:root{
+	--background: #eee;
+  --hover-color: rgba(102, 177, 241, 0.8);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --tab-background: #fff;
+  --hover-text: white;
+  --tab-text: #000;
+  --page-text: #000;
+  --background_nm:rgba(255,0,0,0.2);
+	background: var(--background);
+}
+
+#night_mode{
+ width: 100%;
+ height: 100%;
+ background: var(--background_nm);
+ border: none; 
+}
+.dark-mode {
+	--background: #121212;
+  --hover-color: rgba(255, 177, 241, 0.8);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --tab-background: #455a64;
+  --hover-text: white;
+  --tab-text: #9e9e9e;
+  --page-text: #9e9e9e;
+}
+body {
+  font-family: "Century Gothic", "Lato", sans-serif;
+  color: var(--page-text)
+}
+
+a {
+  text-decoration: none;
+}
+
+.et-hero-tabs,
+.et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: var(--background);
+  text-align: center;
+  padding: 0 2em;
+}
+.et-hero-tabs h1,
+.et-slide h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+.et-hero-tabs h3,
+.et-slide h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px var(--shadow-color);
+  background: var(--tab-background);
+  z-index: 10;
+}
+.et-hero-tabs-container--top {
+  position: fixed;
+  top: 0;
+}
+
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: var(--tab-text);
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.et-hero-tab:hover {
+  color: var(--hover-text);
+  background: var(--hover-color);
+  transition: all 0.5s ease;
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: red;
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+  .et-hero-tabs h1,
+.et-slide h1 {
+    font-size: 3rem;
+  }
+  .et-hero-tabs h3,
+.et-slide h3 {
+    font-size: 1rem;
+  }
+
+  .et-hero-tab {
+    font-size: 1rem;
+  }
+}
+
+
+.link {
+  color: black;
+}
+
+.link:visited {
+  color: black;
+}
+
+.link:hover {
+  color: brown;
+}
+
+.link:active {
+  color: brown;
+}
