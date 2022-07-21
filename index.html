@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
@@ -17,8 +17,27 @@
       <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
       <a class="et-hero-tab" href="#tab-react">Curriculum Vitae</a>
       <a class="et-hero-tab" href="#tab-other">Contact</a>
-      <div class="et-hero-tab">
+      <!-- <div class="et-hero-tab">
           <button class="theme-switch" id="night_mode">Dark Mode</button>
+      </div> -->
+      <div class="et-hero-tab-click">
+        
+        <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" onchange=nm(value) checked><label for="toggle-on" class="btn"><i class="fa-solid fa-sun"></i></label>
+<input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio" onchange=nm(value) ><label for="toggle-off" class="btn"><i class="fa-solid fa-moon"></i></label>
+<script>
+  function nm(val) {
+    if(val=="false") {
+  document.body.classList.remove('dark-mode');
+  cv.data = "Bertagnoli_CV.svg";
+  logo.data = "logo2.svg";
+  
+}else{
+  document.body.classList.add('dark-mode');
+  cv.data = "Bertagnoli_CV_dark.svg";
+  logo.data = "logo2_light.svg";
+};
+  }
+  </script>
       </div>
       <span class="et-hero-tab-slider"></span>
     </div>
@@ -29,12 +48,13 @@
     <section class="et-slide" id="tab-es6">
       <h1>About</h1>
     </section>
+    
     <section class="et-slide" id="tab-flexbox">
       <h1>Projects</h1>
     </section>
     <section class="et-slide" id="tab-react">
       <h1>Curriculum Vitae</h1>
-      <object id = 'cv' data="Bertagnoli_CV.svg" heigt="100%"> </object>
+      <object id = 'cv' data="Bertagnoli_CV.svg" > </object>
     </section>
     <section class="et-slide" id="tab-other">
       <h1>Contact</h1>
