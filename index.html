@@ -24,23 +24,7 @@
         
         <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" onchange=nm(value) checked><label for="toggle-on" class="btn"><i class="fa-solid fa-sun"></i></label>
 <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio" onchange=nm(value) ><label for="toggle-off" class="btn"><i class="fa-solid fa-moon"></i></label>
-<script>
-  function nm(val) {
-    if(val=="false") {
-  document.body.classList.remove('dark-mode');
-  cv.data = "Bertagnoli_CV.svg";
-  logo.data = "logo2.svg";
-  profile.src = 'Profile_pink.png';
-  
-}
-else{
-  document.body.classList.add('dark-mode');
-  cv.data = "Bertagnoli_CV_dark.svg";
-  logo.data = "logo2_light.svg";
-  profile.src = 'Profile_blue.png';
-};
-  }
-  </script>
+
       </div>
       <span class="et-hero-tab-slider"></span>
     </div>
@@ -50,7 +34,18 @@ else{
   <main class="et-main">
     <section class="et-slide" id="tab-es6">
       <h1>About</h1>
-      <img id='profile' src="Profile_pink.png" width="300" height="300"> </img>
+      <div class="img-container">
+        <div class="about_text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum, possimus odio incidunt aspernatur adipisci commodi sed iusto optio mollitia iste alias, magnam quasi vitae eum quas quam ut ipsam? 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facilis nemo facere adipisci eveniet recusandae dolorum in id enim, totam tempora, dolore ratione quae? Quo est eius maiores sunt nostrum.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique fuga quidem mollitia aspernatur nemo soluta. Sint odio quaerat illo cupiditate autem nam nulla, doloribus pariatur enim dolorum neque molestias?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in obcaecati, hic officia nihil earum dolore, fugit expedita aspernatur sequi atque ex quibusdam odio voluptatem quae iure aliquam quam magnam.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, provident. In distinctio quibusdam possimus aliquam cumque ab natus quas. Reiciendis dignissimos officiis quis laborum quisquam harum asperiores, veniam consectetur similique.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis laboriosam beatae? Sapiente adipisci a eveniet magnam tempore laborum velit provident ea similique laboriosam? Maiores reiciendis est earum iusto itaque?
+        </div>
+        <img id='profile' src="Profile_pink.png" width="300" height="300"> </img>
+      </div>
+
     </section>
     
     <section class="et-slide" id="tab-flexbox">
@@ -76,21 +71,7 @@ else{
       <div class = 'project'>
         <h2>Project</h2>
       </div>
-      <div class = 'project'>
-        <h2>Project</h2>
-      </div>
-      <div class = 'project'>
-        <h2>Project</h2>
-      </div>
-      <div class = 'project'>
-        <h2>Project</h2>
-      </div>
-      <div class = 'project'>
-        <h2>Project</h2>
-      </div>
-      <div class = 'project'>
-        <h2>Project</h2>
-      </div>
+
       
     </section>
 
