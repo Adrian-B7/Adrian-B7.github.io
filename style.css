@@ -19,7 +19,7 @@
  border: none; 
 }
 .dark-mode {
-	--background: #121212;
+	--background: #222222;
   --hover-color: rgba( 175, 221, 233, 0.8);
   --shadow-color: rgba(0, 0, 0, 0.1);
   --tab-background: #455a64;
