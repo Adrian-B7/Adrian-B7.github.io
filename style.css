@@ -7,10 +7,16 @@
   --tab-text: #000;
   --page-text: #000;
   --background_nm:rgba(255, 177, 204, 0.8);
+  --slider-col: #525252;
 	background: var(--background);
+
 }
 
-
+#cv{
+  height:90vh;
+  width:100vw;
+  padding: none;
+}
 .btn {
   
   width:49.6%;
@@ -94,6 +100,7 @@ input[type="radio"].toggle:checked + label:after {
   --hover-text: black;
   --tab-text: #dddddd;
   --page-text: #dddddd;
+  --slider-col: #dddddd;
 }
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
@@ -110,10 +117,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  /* height: max-content; */
+  /* clear:both;  */
+  /* overflow: hidden; */
+  /* height: auto; */
+  /* overflow: auto; */
+
   position: relative;
   background: var(--background);
   text-align: center;
+  /* vertical-align: top; */
   padding: 0 2em;
 }
 .et-hero-tabs h1,
@@ -194,9 +208,23 @@ a {
   bottom: 0;
   width: 0;
   height: 6px;
-  background: var(--page-text);
+  background: var(--slider-col);
   transition: left 0.3s ease;
 }
+
+
+.project h2{
+  width: 90vw;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+
+}
+
+
 
 @media (min-width: 800px) {
   .et-hero-tabs h1,
