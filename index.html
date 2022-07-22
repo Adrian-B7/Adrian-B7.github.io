@@ -101,8 +101,15 @@
   <!-- partial -->
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
-  <script  src="./script_nm.js"></script><script id="cursor-script"></script><script src="https://kit.fontawesome.com/a319d97a08.js" crossorigin="anonymous"></script>
-  <script>if(window.innerWidth>800){document.getElementById('cursor-script').src = "./script_cursor.js"}</script>
+  <script  src="./script_nm.js"></script><script src="https://kit.fontawesome.com/a319d97a08.js" crossorigin="anonymous"></script>
+  <script>
+    var body = document.getElementsByTagName('body');
+    var js = document.createElement("script");
+    js.type = 'text/javascript'
+    if(screen.width>800){
+      js.src = "./script_cursor.js"
+  }
+  body.appendChild(js)</script>
 
 </body>
 </html>
