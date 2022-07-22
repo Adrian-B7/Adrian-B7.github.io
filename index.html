@@ -110,7 +110,9 @@
     var js = document.createElement("script");
     var dv = document.createElement("div");
     //var fp = document.getElementById('first-page-container')
+
     var wh = window.innerHeight;
+    $("#first-page-container").css('min-height',wh+'px')
     js.type = 'text/javascript'
     dv.classList.add('cursor')
     if(!navigator.userAgentData.mobile){
@@ -119,8 +121,8 @@
       
   }
     //fp.css('min-height',wh+'px')
-$("#first-page-container").css('min-height',wh+'px')
-  body[0].appendChild(js)</script>
+
+    body[0].appendChild(js)</script>
 
 </body>
 </html>
