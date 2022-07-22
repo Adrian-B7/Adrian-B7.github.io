@@ -80,10 +80,7 @@ input[type="radio"].toggle {
 input[type="radio"].toggle + label {
   min-width: 60px;
 }
-input[type="radio"].toggle + label:hover {
-  background: none;
-  color: var(--hover-color);
-}
+
 
 
 input[type="radio"].toggle + label:after {
@@ -214,11 +211,7 @@ justify-content: flex-start;
   transition: all 0.5s ease;
   font-size: 0.8rem;
 }
-.et-hero-tab:hover {
-  color: var(--hover-text);
-  background: var(--hover-color);
-  transition: all 0.5s ease;
-}
+
 .et-hero-tab-click {
   
   display: flex;
@@ -415,11 +408,23 @@ justify-content: flex-start;
   color: var(--page-text);
 }
 
-.link:hover {
-  color: var(--hover-color);
-}
+
 
 .link:active {
   color: var(--hover-color);
 }
 
+@media (hover: hover) {
+  .link:hover {
+    color: var(--hover-color);
+  }
+  input[type="radio"].toggle + label:hover {
+    background: none;
+    color: var(--hover-color);
+  }
+  .et-hero-tab:hover{
+    color: var(--hover-text);
+    background: var(--hover-color);
+    transition: all 0.5s ease;
+  }
+}
