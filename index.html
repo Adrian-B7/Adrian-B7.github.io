@@ -6,12 +6,15 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
   <link id = 'icon' rel="icon" href="logo2.png">
+  <meta name="supported-color-schemes" content="light dark">
+  <meta id = 'color-scheme' name="color-scheme" content="">
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <!-- Hero -->
   <section class="et-hero-tabs">
-    <object id='logo' data="logo2.svg" width="300" height="300"> </object>
+    <img id='logo' src="logo2.svg" width="300" height="300"> 
     <h1>Adrian Bertagnoli</h1>
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#tab-es6">About</a>
@@ -33,19 +36,20 @@
   <main class="et-main">
     <section class="et-slide" id="tab-es6">
       <h1>About</h1>
-
-      <div class="img-container">
-        <div class="about_text">
+      <div class = 'about-container'>
+        <div id="about_text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rerum, possimus odio incidunt aspernatur adipisci commodi sed iusto optio mollitia iste alias, magnam quasi vitae eum quas quam ut ipsam? 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facilis nemo facere adipisci eveniet recusandae dolorum in id enim, totam tempora, dolore ratione quae? Quo est eius maiores sunt nostrum.
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam similique fuga quidem mollitia aspernatur nemo soluta. Sint odio quaerat illo cupiditate autem nam nulla, doloribus pariatur enim dolorum neque molestias?
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in obcaecati, hic officia nihil earum dolore, fugit expedita aspernatur sequi atque ex quibusdam odio voluptatem quae iure aliquam quam magnam.
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, provident. In distinctio quibusdam possimus aliquam cumque ab natus quas. Reiciendis dignissimos officiis quis laborum quisquam harum asperiores, veniam consectetur similique.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis laboriosam beatae? Sapiente adipisci a eveniet magnam tempore laborum velit provident ea similique laboriosam? Maiores reiciendis est earum iusto itaque?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis laboriosam beatae? Sapiente adipisci a eveniet magnam tempore laborum velit provident ea similique laboriosam? Maiores reiciendis est earum iusto itaque?
         </div>
+        <div class = 'img-container'>
         <img id='profile' src="Profile_pink.png" width="300" height="300"> </img>
       </div>
-
+    </div>
     </section>
     
     <section class="et-slide" id="tab-flexbox">
@@ -80,7 +84,7 @@
     </section> -->
     <section class="et-slide" id="tab-react">
       <h1>Curriculum Vitae</h1>
-      <object id = 'cv' data="Bertagnoli_CV.svg"> </object>
+      <img id = 'cv' src="Bertagnoli_CV.svg"> 
     </section>
     <section class="et-slide" id="tab-other">
       <h1>Contact</h1>

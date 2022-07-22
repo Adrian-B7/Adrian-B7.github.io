@@ -1,6 +1,7 @@
 /* TODO set darkmode/lightmode based on browser preference */
 /* TODO typing test */
-
+/* TODO do seperate dark and light css files and simply load the releavant one */
+ 
 
 :root{
 	--background: #eee;
@@ -10,13 +11,12 @@
   --hover-text: white;
   --tab-text: #000;
   --page-text: #000;
-  --background_nm:rgba(255, 177, 204, 0.8);
   --slider-col: #525252;
-  color-scheme: 'light';
-
 	background: var(--background);
+  /* scrollbar-color: dark; */
 
 
+  
 }
 
 .dark-mode {
@@ -33,16 +33,13 @@
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
   color: var(--page-text);
-}
-html {
-  overflow-x: hidden;
+  color-scheme: 'dark';
 
 }
 
 /* CURSOR */
 * {
   cursor: none;
-  
 }
 
 
@@ -306,34 +303,74 @@ justify-content: flex-start;
 
 }
 
-
+/* 
 
 .img-container{
   width: 80vw;
   padding: 0 0 0 0;
-  display: inline-block;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: right;
   text-align: right;
-  /* background-color: #000; */
 
 }
 .about_text{
-  width: 50vw;
+  min-width: 10vw;
   
   min-height: 100%;
   padding: 0 0 0 0;
-  display: inline-block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+    margin: auto;
   text-align: center;
 
-  /* background-color: rgb(178, 175, 175); */
+
+} */
+
+
+.img-container,.about_text{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* .about-container{
+
+    display: grid;
+    grid-template-columns: 70vh auto;
+    gap: 10vh;
+    background-color: #2196F3;
+    padding: 5vh;
+
+} */
+@media (max-width: 800px) {
+  .about-container{
+
+    display: grid;
+    grid-template-columns: 50vw auto;
+    gap: 10vw;
+    /* background-color: #2196F3; */
+    padding: 5vh 0 0 0;
 
 }
-
+:root{
+  overflow-x: auto;
+}
+}
 @media (min-width: 800px) {
+:root{
+  overflow-x: hidden;
+}
+.about-container{
+
+    display: grid;
+    grid-template-columns: 50vw auto;
+    gap: 10vw;
+    /* background-color: #2196F3; */
+    padding: 5vh 0 0 0;
+
+}
   .et-hero-tabs h1,
 .et-slide h1 {
     font-size: 3rem;
@@ -354,7 +391,9 @@ justify-content: flex-start;
     font-size: 1rem;
 
   }
+
 }
+
 
 
 .link {
@@ -372,3 +411,4 @@ justify-content: flex-start;
 .link:active {
   color: var(--hover-color);
 }
+
