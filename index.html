@@ -15,8 +15,10 @@
 <!-- partial:index.partial.html -->
 <!-- Hero -->
   <section class="et-hero-tabs">
+    <div id = 'first-page-container'>
     <img id='logo' src="logo2.svg" width="300" height="300"> 
     <h1>Adrian Bertagnoli</h1>
+  </div>
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#tab-es6">About</a>
       <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
@@ -107,7 +109,7 @@
     // var main = document.getElementsByTagName('main');
     var js = document.createElement("script");
     var dv = document.createElement("div");
-    var fp = document.getElementsByClassName('et-hero-tabs')[0];
+    //var fp = document.getElementById('first-page-container')
     var wh = window.innerHeight;
     js.type = 'text/javascript'
     dv.classList.add('cursor')
@@ -115,9 +117,9 @@
       js.src = "./script_cursor.js"
       body[0].appendChild(dv)
       
-  }else{
-    fp.style.minHeight(wh+'px')
   }
+    //fp.css('min-height',wh+'px')
+$("#first-page-container").css('min-height',wh+'px')
   body[0].appendChild(js)</script>
 
 </body>
