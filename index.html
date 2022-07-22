@@ -8,6 +8,7 @@
   <link id = 'icon' rel="icon" href="logo2.png">
   <meta name="supported-color-schemes" content="light dark">
   <meta id = 'color-scheme' name="color-scheme" content="">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
 </head>
 <body>
@@ -97,19 +98,27 @@
     </section>
 
   </main>
-  <div class="cursor"></div>
   <!-- partial -->
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
   <script  src="./script_nm.js"></script><script src="https://kit.fontawesome.com/a319d97a08.js" crossorigin="anonymous"></script>
   <script>
     var body = document.getElementsByTagName('body');
+    // var main = document.getElementsByTagName('main');
     var js = document.createElement("script");
+    var dv = document.createElement("div");
+    var fp = document.getElementsByClassName('et-hero-tabs')[0];
+    var wh = window.innerHeight;
     js.type = 'text/javascript'
-    if(screen.width>800){
+    dv.classList.add('cursor')
+    if(!navigator.userAgentData.mobile){
       js.src = "./script_cursor.js"
+      body[0].appendChild(dv)
+      
+  }else{
+    fp.style.minHeight(wh+'px')
   }
-  body.appendChild(js)</script>
+  body[0].appendChild(js)</script>
 
 </body>
 </html>
