@@ -89,7 +89,7 @@
       <h1>Curriculum Vitae</h1>
       <img id = 'cv' src="Bertagnoli_CV.svg"> 
     </section>
-    <section class="et-slide" id="tab-other">
+    <section class="et-slide" id="tab-contact">
       <h1>Contact</h1>
       
       <ul><h3><i class="fa-solid fa-location-dot"></i> Zurich, Switzerland</h3></ul>
@@ -116,9 +116,13 @@
     js.type = 'text/javascript'
     dv.classList.add('cursor')
     if(!navigator.userAgentData.mobile){
+      $(".et-slide").css('min-height','100vh')
       js.src = "./script_cursor.js"
       body[0].appendChild(dv)
       
+  } else{
+    $(".et-slide").css('min-height','60vh')
+    // $(".et-slide h1").css('justify-content','center')
   }
     //fp.css('min-height',wh+'px')
 
