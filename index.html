@@ -113,17 +113,18 @@
 
     var wh = window.innerHeight;
     $("#first-page-container").css('min-height',wh+'px')
+    $(".et-slide").css('min-height',wh+'px')
     js.type = 'text/javascript'
     dv.classList.add('cursor')
     if(!navigator.userAgentData.mobile){
-      $(".et-slide").css('min-height','100vh')
+      // $(".et-slide").css('min-height','100vh')
       js.src = "./script_cursor.js"
       body[0].appendChild(dv)
       
-  } else{
-    $(".et-slide").css('min-height','80vh')
+  } 
+    // $(".et-slide").css('min-height',wh+'px')
     // $(".et-slide h1").css('justify-content','center')
-  }
+  
     //fp.css('min-height',wh+'px')
 
     body[0].appendChild(js)</script>
