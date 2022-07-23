@@ -141,9 +141,9 @@ justify-content: flex-start;
 #first-page-container,.et-hero-tabs {
   justify-content: center;
   }
-.et-slide {
+/* .et-slide {
   min-height: 100vh;
-}
+} */
 #first-page-container,
 .et-hero-tabs,
 .et-slide {
@@ -296,8 +296,8 @@ justify-content: flex-start;
   .about-container{
 
     display: grid;
-    grid-template-columns: 50vw auto;
-    gap: 10vw;
+    grid-template-columns: auto auto;
+    gap: 1vw;
     /* background-color: #2196F3; */
     padding: 5vh 0 0 0;
 
@@ -427,4 +427,8 @@ justify-content: flex-start;
     background: var(--hover-color);
     transition: all 0.5s ease;
   }
+}
+
+#tab-contact{
+  justify-content: center;
 }
