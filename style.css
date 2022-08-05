@@ -42,7 +42,9 @@ body {
   cursor: none;
 }
 
-
+.interests{
+  text-align: left;
+}
 
 
 
@@ -370,7 +372,7 @@ justify-content: flex-start;
 
     display: grid;
     grid-template-columns: 50vw auto;
-    gap: 10vw;
+    gap: 7vw;
     /* background-color: #2196F3; */
     padding: 5vh 0 0 0;
 
