@@ -42,13 +42,16 @@ body {
   cursor: none;
 }
 
-.interests{
+/* .interests{
   text-align: left;
+  width: 40vw
 }
 
+.interests dt{
+  font-size : 2vh;
+}
 
-
-
+ */
 
 
 
@@ -126,9 +129,22 @@ input[type="radio"].toggle:checked + label:after {
   padding: none;
 }
 
+.interests{
+
+  position:relative;
+  top:-4vh;
+}
 
 
+.interests-container{
 
+  display: grid;
+  grid-template-columns: 60vw auto;
+  gap: 10vw;
+  /* background-color: #2196F3; */
+  padding: 1vh 0 0 0;
+
+}
 
 
 
@@ -240,7 +256,35 @@ justify-content: flex-start;
   background: var(--slider-col);
   transition: left 0.3s ease;
 }
+.interests h2{
+  font-size:2.2rem;
 
+  width: 90vw;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+
+}
+.interests dl{
+  /* width: 40vw; */
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+
+}
+.interests dd{
+  /* width: 40vw; */
+  margin-bottom: 3rem;
+
+}
+.interests dt{
+  font-size:1.5rem;
+  font-style: italic;
+
+}
 
 .project h2{
   width: 90vw;
@@ -294,6 +338,7 @@ justify-content: flex-start;
     padding: 5vh;
 
 } */
+
 @media (max-width: 800px) {
   .about-container{
 
@@ -303,18 +348,30 @@ justify-content: flex-start;
     /* background-color: #2196F3; */
     padding: 5vh 0 0 0;
 
+
+  
 }
 :root{
   overflow-x: auto;
 }
+
+/* #ring_attractor{
+  width:10vw;
+  margin-top:0vh
+} */
 }
-
-
+/* 
+#ring_attractor{
+  width:8vw;
+  margin-top:-5vh
+} */
 
 
 @media (min-width: 800px) {
-
-
+#ring_attractor{
+  width:8vw;
+  margin-top:-3vw
+}
 .cursor {
   z-index: 100;
   position: absolute;
