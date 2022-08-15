@@ -431,7 +431,7 @@ justify-content: flex-start;
     grid-template-columns: 50vw auto;
     gap: 7vw;
     /* background-color: #2196F3; */
-    padding: 5vh 0 0 0;
+    padding: 2vw 0 0 0;
 
 }
   .et-hero-tabs h1,
@@ -472,6 +472,22 @@ justify-content: flex-start;
 .link:active {
   color: var(--hover-color);
 }
+
+
+.link2 {
+  color: var(--hover-color);
+}
+
+.link2:visited {
+  color: var(--hover-color);
+}
+
+
+
+.link2:active {
+  color: var(--hover-color);
+}
+
 
 @media (hover: hover) {
   .link:hover {

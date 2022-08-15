@@ -21,7 +21,7 @@
   </div>
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#tab-es6">About</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
+      <!-- <a class="et-hero-tab" href="#tab-flexbox">Projects</a> -->
       <a class="et-hero-tab" href="#tab-react">Curriculum Vitae</a>
       <a class="et-hero-tab" href="#tab-contact">Contact</a>
 
@@ -42,14 +42,12 @@
       <div class = 'about-container'>
         <div  style="margin-top: 4vh;" id="about_text">
         I am a current Master Student at ETH Zurich enrolled in the Biomedical Engineering MSc in the Bioelectrionics track. Since highscool, my primary interest has been latent information representation/encoding within the brain,
-         although I wouldn't have been able to verbalize it this nicely back then. I believe that the current era of machine learning is facilitating the ideal environment to study this, as it is sheding insight into the mechanistic functinin
-         For the first time, mechanisms of the brain are well enough understood to model technology after it in the form of neuromorphic hardware and in silico neural networks. Albeit a thorough understanding of the brain may still be a distant prospect,
-          these developments are arguably indicative of a timeframe where technological advancements and discoveries form an environment, enriched enough to cultivate the next zeitgeist, allowing us to conquer one of the greatest frontiers in scientific endeavours of our time
-
+         although I wouldn't have been able to verbalize it this nicely back then. I believe that the current era of machine learning is facilitating the ideal environment to study this, as it is generating novel approaches and analyses, which move away from a 
+         purely bio-centric view of neuroscience and rather put an emphasis on the computataional aspect of it. 
         In my free time I primarily enjoy being out in nature, whether for a bike ride or a hike. I cherish every opportunity to travel and experience new environments and cultures. 
       
-        My Myers-Briggs Type Indicator is <a href="https://www.16personalities.com/intp-personality", target="_blank">INTP</a>, which is an acronym for the four constituent categories of the MBTI. In the case of INTP they stand for Introverted, Intuitive, Thinking, and Prospecting. Although I do not believe a very percice categroisation of individuality is achieved,
-        I do believe that the MBTI enables some insights about oneself. <a href="https://www.16personalities.com/", target="_blank">This questionaire</a> allows you to test your MBTI for free. 
+        My Myers-Briggs Type Indicator is <a class = 'link2'  href="https://www.16personalities.com/intp-personality", target="_blank">INTP</a>, which is an acronym for the four constituent categories of the MBTI. In the case of INTP they stand for Introverted, Intuitive, Thinking, and Prospecting. Although I do not believe a very percice categroisation of individuality is achieved,
+        I do believe that the MBTI enables some insights about oneself. <a class = 'link2'  href="https://www.16personalities.com/", target="_blank">This questionaire</a> allows you to test your MBTI for free. 
         </div>
         <div class = 'img-container'>
         <img id='profile' src="Profile_pink.png" width="300" height="300"> </img>
@@ -62,9 +60,12 @@
         <dt>Latent Information Representation in the Brain</dt>
 
         <div class = 'interests-container'>
-        <dd>One major question in neuroscience is how information is represented within the brain. One promising research direction which may proove fruitfull is Neural Manifolds. Neural Manifolds are low-dimensional structures on which neural computation is constrained through the network connectivity.
-           One example to clarify this concept is the neural manifold of the head direction cells. Described in a <a href='', target="_blank">paper</a> Professor Ila Fietes group used topological data analysis along with nonlinear dimensionality reduction techniques in order to establish that the activity of the HD circuit lies on a ring manifold. 
-          They then used splines fitted to this manifold to perform unsupervised heading direction estimates by assuming the manifold employs isometric codint, and found exceptional agreement.</dd>
+        <dd>
+          One major question in neuroscience is how information is represented within the brain. One promising research direction which may proove fruitfull is Neural Manifolds. Neural Manifolds are low-dimensional structures on which the temporal evolution of higher dimensional neural activity is constrained through the network connectivity.
+          One example to clarify this concept is the neural manifold of the head direction cells. Described in a <a class = 'link2'  href='https://www.nature.com/articles/nature12742', target="_blank">paper</a> Professor Ila Fietes group used topological data analysis along with nonlinear dimensionality reduction techniques in order to establish that the activity of the head direction circuit lies on a ring manifold. 
+          The network has many thousand neurons, and therefore its opulation code has equivalently high dimension (as the population code consists of the vector of instantaneous firing rates of neurons). Nevertheless, the entire activity lies close to a convoluted ring, which is a 1D topological structure. Once a ring manifold had been identified,
+          splines could be fitted in order to determine the position of the population activity along the ring. These splines could then be used to perform unsupervised heading direction estimates by assuming the manifold employs isometric coding, and fitting an initial position to it.
+        </dd>
         <figure>
         <img src="ring_attractor.gif" id="ring_attractor"> 
         <figcaption>Head Direction Manifold</figcaption>
@@ -72,53 +73,78 @@
       </div>
         <dt>Synergy between Computational Neuroscience and Machine Learining</dt>
         <div class = 'interests-container'>
-          <dd>Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
-             This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a href="", target="_blank">Mante et al.</a>,
-              where they fit an RNN to the neural dynamics of maquace monkeys while perfoming a behaivioural task involving visual integration and selection.   </dd>
+          <dd>
+            Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
+            This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a  class = 'link2' href="", target="_blank">Mante et al.</a>. Here they analysed the neural activity of maquace monkeys prefrontal cortices
+            while perfoming a behaivioural task involving visual integration and selection. Here they found that the representation of inputs and the choice the monkey will ultimately make are seperabe in neural statespace. Nevertheless, they were able to train a Recurrent neural network to reproduce the population dynamics, indicating that 
+            selection and integration of task-relevant inputs are part of the same underlying dynamical process. Through analyses of the trained RNN, they were also able to indicate the mechanistic dynamical processes which allowed the coexsitance of these two constituents within the same dynamical system. 
+          </dd>
         </div>
         <dt>Bio-plausible Learning Algorithms</dt>
         <div class = 'interests-container'>
-          <dd>Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
-             This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a href="", target="_blank">Mante et al.</a>,
-              where they fit an RNN to the neural dynamics of maquace monkeys while perfoming a behaivioural task involving visual integration and selection.   </dd>
+          <dd>
+            One of the major driving forces of the Deep-learning revolution has been the use of the backpropagation algorithm. Rooted in control theory it allows a loss gradient to be calculated in terms of the network parameters. 
+            This formulation could then be used with already established gradient descend techniques. Nevertheless, backpropagation proves to be biologically implausible due to a number of factors including the lack of feedback weight plasticity and therefore 
+            weight symmetry, the need for distinct phases including forward and backward passed, and the need for global information IE weight transport to occur. To mitigate these biological implausibilities, a number of alternate algorithms have been proposed.
+            These most-prominently include Feedback Alignment and variants of it, Target Propagation and variants, and Local Layer-wise learning. Nevertheless, these algorithms, although coming close, do not match the performance of backpropagation. Furthermore,
+            real neural systems communicate via spikes and therefore will inherently use the spiking information for the weight updates. Although some properties like spike dependant plasticity are known, they do not allow spiking neural networks to effectively navigate
+            a function space.
+          </dd>
         </div>
-        <dt>Neuromorphic Hardware and Edge Computing</dt>
+        <dt>Personalised Approaches in Medicine</dt>
+        <div class = 'interests-container'>
+          <dd>
+            High variability in patient response to treatment is a big problem in medicine. This problem is highly exacerbated by the fact that most reference data was collected from caucasian males which is a big issue in itself. This lead to standard treatments being designed 
+            on profoundly biased reference data and therefore variable responses especially across ethnicities and genders are immense. I explored the possibility of personalised approaches in catheter ablation in my Bachelor Thesis. Atrial Fibrilation (AF) is the most common form of sustained 
+            cardiac arrythmia and represents a major risk factor for ischemic stroke and severely increases mortality. The only Curative Treatment is Catheter ablation which has a reoccurence rate of over 45% in the first 12 months. One problem with catheter ablation is that it uses the same 
+            treatment procedure regardless of the patients atrial geometry and fibrosis topography which are both highly relevant in generating and sustaining AF. Therefore I came up with the idea of using Deep Reinforcement Learning in order to create catheter ablations based on 
+            bachelor project variable atrial geometries makes 
+            Until complete personalised medical approaches are available for people of every socioeconomic background and ethnicity, I strongly believe there should be more efforts to collect relevant reference data to help reduce patient treatment response variability. 
+            complete personalisation is still a distant prospect therefore advocate of new references
+          </dd>
+          </div>
+        <!-- <dt>Neuromorphic Hardware and Edge Computing</dt>
+        <div class = 'interests-container'>
+          <dd>
+            Since the revolutionary AlexNet, the deep learning revolution has been aided by massive GPU clusters, whos energy consumption is constantly climbing to the megawatt scale. Yet the Brain manages computation which exceeds both flexibility and ability in most areas while only consuming around 20 watt.
+            The primary reason is that the brain employs a mixture of digital and analog computing, which allows for a multitude of benefits including robust long range communication in the digital regieme while integration happens in the analog regieme where there is no need to employ digital processes to 
+          </dd>
+        </div> -->
+        <!-- <dt>Computational Models of Neruonal Processes</dt>
         <div class = 'interests-container'>
           <dd>Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
              This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a href="", target="_blank">Mante et al.</a>,
               where they fit an RNN to the neural dynamics of maquace monkeys while perfoming a behaivioural task involving visual integration and selection.   </dd>
-        </div>
-        <dt>Computational Models of Neruonal Processes</dt>
+        </div> -->
+        <!-- <dt>Geometric Deep Learning</dt>
         <div class = 'interests-container'>
           <dd>Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
              This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a href="", target="_blank">Mante et al.</a>,
               where they fit an RNN to the neural dynamics of maquace monkeys while perfoming a behaivioural task involving visual integration and selection.   </dd>
-        </div>
-        <dt>Geometric Deep Learning</dt>
+        </div> -->
+        <!-- <dt>Physiological Role of Sleep and how to Artificially Enhance it</dt>
         <div class = 'interests-container'>
-          <dd>Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
-             This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a href="", target="_blank">Mante et al.</a>,
-              where they fit an RNN to the neural dynamics of maquace monkeys while perfoming a behaivioural task involving visual integration and selection.   </dd>
-        </div>
-        <dt>Physiological Role of Sleep and how to Artificially Enhance it</dt>
-        <div class = 'interests-container'>
-          <dd>Trivially machine learning has taken many inspirations from computational neuroscience. Arguably the field is rooted in the invention of the McCulloch-Pitts Neuron which came the collaboration between a neuroscientist and a logician. Currently, we are entering an era where the discoveries and inspirations are not unilateral anymore.
-             This is exemplefied by the paradigm of using Recurrent Neural Networks to mimic neural activity patterns, which then allow for a more holistic analysis of the system. This paradigm is famously applied in the work of <a href="", target="_blank">Mante et al.</a>,
-              where they fit an RNN to the neural dynamics of maquace monkeys while perfoming a behaivioural task involving visual integration and selection.   </dd>
+          <dd>The function of sleep has long been postulated and even though many theories are emerging and advancements are being made, a mechanistic understanding of its function is still a distant prospect. </dd>
+        </div> -->
+        
         </div>
       </dl>
     </div>
     </section>
     
-    <section class="et-slide" id="tab-flexbox">
+    <!-- <section class="et-slide" id="tab-flexbox">
       <h1>Current Projects</h1>
       <div class = 'project'>
         <h2>Neural Representation of Compositional Movements</h2>
+        <p>
+          In the lab of Ila Fiete at MIT 
+          The representation of compositionality within the brain is an enticing prospect. To analyse this we are constructing a seq2seq RNN to produce a target trajectory through a biomechanic arm model 
+        </p>
       </div>
       <div class = 'project'>
         <h2>Place Cell Code Analysis and Topological Deformations of Neural Manifolds</h2>
       </div>
-  
+   -->
 
       
     </section>
